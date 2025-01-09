@@ -1,0 +1,17 @@
+{
+  "name": "ecoconf",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bunx serve",
+    "style": "bunx tailwindcss -i ./src/style.css -o ./public/style.css --watch",
+    "start": "bun run dev & bun run style"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "tailwindcss": "^3.4.17"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
